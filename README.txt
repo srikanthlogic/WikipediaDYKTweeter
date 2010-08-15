@@ -1,6 +1,8 @@
 WikipediaDYKTweeter
 
-This script aims to populate DYK hooks by scrapping them from the talk page of DYK articles outputs to a csv file.
+DYKHookScrapper.py:- This script aims to populate DYK hooks by scrapping them from the talk page of DYK articles outputs to a csv file.
+
+WikiDYKTweeter.py:-  This script reads from Google docs spreadsheet where Tweet queue is maintained, creates short  URLs using bit.ly and posts the tweet to twitter
 
 Prerequisites:
 1. Python 2.6 with mwclient ( http://mwclient.sourceforge.net ) 
