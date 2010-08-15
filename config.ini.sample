@@ -1,0 +1,15 @@
+[GDOCS]
+GMAIL_ID = 'GMailID@gmail.com'
+PASSWORD = 'S3cr3TP@assw0rd'
+SOURCE   = 'Wikipedia DYK Tweeter app'
+
+[BITLY]
+API_USER = 'Bitly User'
+API_KEY = 'Bitly Api Key'
+
+[TWITTER]
+CONSUMER_KEY='OAuth Consumer Key'
+CONSUMER_SECRET='Twitter OAuth Consumer Secret'
+ACCESS_KEY = 'Twitter OAuth Access Key'
+ACCESS_SECRET = 'Twitter OAuth Access Secret'
+USER = 'TwitterID'
