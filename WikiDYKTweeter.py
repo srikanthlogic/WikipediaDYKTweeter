@@ -14,7 +14,7 @@ class WikipediaDYKTweeter:
 	gd_client = gdata.spreadsheet.service.SpreadsheetsService()
 	spreadSheetKey = ''
 	workSheetId = ''
-	config = ConfigObj('WPDYK.cfg')
+	config = ConfigObj('config.ini')
 
 	def PostTweet(self,tweetText):
 		auth = tweepy.OAuthHandler(self.config['TWITTER']['CONSUMER_KEY'], self.config['TWITTER']['CONSUMER_SECRET'])
