@@ -21,3 +21,4 @@ TODO:
 	b. Column definitions should be customizable and be configurable
 2. Enable logging
 3. Make the DYKHookScrapper more comprehensive covering all present patterns
+4. Support Identi.ca
