@@ -5,6 +5,7 @@ import gdata.spreadsheet
 from xml.etree import ElementTree
 import string
 import time
+from datetime import datetime
 from configobj import ConfigObj
 import tweepy
 import bitlyapi
@@ -67,6 +68,7 @@ class WikipediaDYKTweeter:
 		return 0
 
 	def MainMethod(self):
+		print datetime.now().strftime("%d-%b-%Y %I:%M:%S%p")
 		self.LoadWorkSheet()
 		queryFeed = self.GetQueryFeedForGrid('2','100','2','2')
 		CurrentRow = self.GetCurrentHookRowNumber(queryFeed)
