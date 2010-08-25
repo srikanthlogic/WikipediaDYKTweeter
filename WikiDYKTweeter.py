@@ -9,13 +9,16 @@ from datetime import datetime
 from configobj import ConfigObj
 import tweepy
 import bitlyapi
+import os
+
+CUR_DIR = os.path.dirname(__file__)
 
 class WikipediaDYKTweeter:
 
 	gd_client = gdata.spreadsheet.service.SpreadsheetsService()
 	spreadSheetKey = ''
 	workSheetId = ''
-	config = ConfigObj('config.ini')
+	config = ConfigObj(os.path.join(CUR_DIR,'config.ini'))
 
 	def PostTweet(self,tweetText):
 		auth = tweepy.OAuthHandler(self.config['TWITTER']['CONSUMER_KEY'], self.config['TWITTER']['CONSUMER_SECRET'])
