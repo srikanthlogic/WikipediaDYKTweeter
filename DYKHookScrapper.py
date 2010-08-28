@@ -3,7 +3,7 @@ import re
 import sys
 
 def unwikify(Hook):
-	rmChar = ['[','{','}',']','.','\'']
+	rmChar = ['[','{','}',']','.','\'','\\\\\\']
 	for s in rmChar:
 		Hook = Hook.replace(s,'')
 	Hook = Hook.replace(', ',',')
@@ -14,6 +14,8 @@ def GetDYKHook(PageName):
 	page = site.Pages.get(PageName)
 	text = page.edit()
 	hook = re.findall('\.\.\..*.\}\}',re.findall('\|entry\=\.\.\..*.\}\}',text).__str__())
+	if (hook != None or hook != ''):
+		hook = re.findall('\.\.\..*.\}\}',re.findall('{{\*mp}}.*.\}\}',text).__str__())
 	return hook
 
 def main():
